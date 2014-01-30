@@ -8,14 +8,14 @@ Group project by Elizabeth Barr, Matt Bertino, Jeremy Crawford
 Primary divs:
 
 page-one
-  logo
-  main-copy
-  footer
+   logo
+   main-copy
+   footer
 
 page-two
-  submission-forms
-  avatar
+      submission-forms
+      avatar
 
 page-three
-  gallery
-  end-footer
+      gallery
+      end-footer

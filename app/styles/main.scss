@@ -4,25 +4,118 @@ body {
     color: #333;
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-    h1 {
-        font-size: 60px;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
+.grande-container {
+    border: 1px solid purple;
+    width: 960px;
 }
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+
+.header {
+    border: 1px solid red;
+    width: 960px;
+    height: 75px;
+
+}
+
+.landing-page {
+    border: 1px solid black;
+    width: 960px;
+    height: 855px;
+
+}
+
+.logo {
+    border: 1px solid red;
+    width: 960px;
+    height: 300px;
+}
+
+.page-two {
+    border: 1px solid blue;
+    width: 960px;
+
+}
+
+.submit-container {
+    border: 1px solid red;
+    width: 960px;
+    height: 855px;
+    margin: 0, auto;
+}
+
+.top-line {
+    border: 1px solid black;
+    width: 960px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.name-box {
+    border: 1px solid black;
+    height: 125px;
+    width: 294px;
+    margin-left: 20px;
+
+}
+
+.email-box {
+    border: 1px solid black;
+    height: 125px;
+    width: 294px;
+    padding-left: 20px;
+
+}
+
+.location-box {
+    border: 1px solid black;
+    height: 125px;
+    width: 294px;
+
+}
+
+.avatar-box {
+    border: 1px solid black;
+    height: 125px;
+    width: 920px;
+    margin: 20px 0 0 20px;
+
+}
+
+.images-box {
+    border: 1px solid black;
+    height: 125px;
+    width: 920px;
+    margin: 20px 0 0 20px;
+
+}
+
+.caption-box {
+    border: 1px solid black;
+    height: 375px;
+    width: 920px;
+    margin: 20px 0 0 20px;
+
+}
+
+.avatars {
+    border: 1px solid black;
+    width: 960px;
+    width: 250px;
+}
+
+.page-three {
+    border: 1px solid blue;
+    width: 960px;
+}
+
+.photo-gallery {
+    border: 1px solid purple;
+    width: 960px;
+    height: 855px;
+}
+
+.footer {
+    border: 1px solid green;
+    width: 960px;
+    height: 125px;
 }

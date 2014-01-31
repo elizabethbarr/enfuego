@@ -26,12 +26,12 @@
 
         <div class="container">
             <div class="inputtainer">
-                <input id='usern'class="in-username"></input>
-                <input id='emai'class="in-email"></input>
-                <input id='loca'class="in-location"></input>
-                <input id='prop'class="in-profilepic"></input>
-                <input id='gali'class="in-galleryimg"></input>
-                <input id='cap'class="in-imgcaption"></input> <br>
+                <input value="hi" id='usern'class="in-username"></input>
+                <input value="ehrehreh@gmail.com"id='emai'class="in-email"></input>
+                <input value="greenville"id='loca'class="in-location"></input>
+                <input value="http://blog.gettyimages.com/wp-content/uploads/2012/10/NASCAR-Taladega-Chris-Graythen-Getty-Images-154895556-e1351523998575.jpg"id='prop'class="in-profilepic"></input>
+                <input value="http://www.hdwallpapers3g.com/wp-content/uploads/2014/01/Images-1.jpg"id='gali'class="in-galleryimg"></input>
+                <input value="This is the caption for the image"id='cap'class="in-imgcaption"></input><br>
                 <button class="submit">submit</button>
             </div>
         </div>
@@ -46,6 +46,7 @@
         <div class="gallery">
             <div class="container">
                 <div class="gallerytainer">
+            
                 </div>                
             </div>
         </div>
@@ -59,14 +60,12 @@
                 </div>   
              </div>
         </script>
+         
          <script class="gallery-template" type="text/template">
                 <div class="galleryimgbox">
-                    <img class="galleryimg"src="<%= galleryimage %>">
+                    <img class="galleryimg"src="<%= url %>">
                     <div class="caption">
                         <span class="imgcaption"><%= caption %></span>
-                        <span class="avatarusername"><%= avatarusername %></span>
-                        <span class="avatarlocation"><%= avatarlocation %></span>
-                        <span class="avataremail"><%= avataremail %></span>
                     </div>   
                 </div>
         </script>

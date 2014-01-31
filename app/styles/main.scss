@@ -5,22 +5,6 @@ body {
     color: #333;
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-    h1 {
-        font-size: 60px;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
-}
-
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -38,24 +22,46 @@ body {
 
 .inputtainer {
     text-align: center;
+    margin: auto auto  ;
     width: 960px;
+
+    .in-username {
+        width: 100px;
+    }
+
+    .in-email {
+        width: 200px;
+    }
+
+    .in-location {
+        width: 150px;
+    }
+
+    .in-profilepic {
+        width: 500px;
+    }    
+
+    .in-galleryimg {
+        width: 500px;
+    }
+
+    .in-imgcaption {
+        width: 500px;
+    }
 }
 
 
 $avatarsize: 150px;
 
 .avatarbanner {
-    margin: 0 auto;
-    display: inline-block;
-    height:$avatarsize;
     width:100%;
-    margin: 0 auto;
-    background-color: gray;
+    height: auto;
+    border: 1px solid red;
 
     .ceneteravatarcontainer {
         text-align: center;
         margin: 0 auto;
-        width: 500px;
+        width: 775px;
 
         .avatar {
             position: relative;
@@ -63,14 +69,16 @@ $avatarsize: 150px;
             margin: 0 auto;
             height: $avatarsize;
             width: $avatarsize;
-            border: 1px solid blue;
+            border-radius: $avatarsize;
 
             .avatarimage {
+                border-radius: $avatarsize;
                 height: $avatarsize;
                 width: $avatarsize;
             }
 
             .caption {
+                border-radius: $avatarsize;
                 background-color: rgba(128, 128, 128, 0.4);
                 width: $avatarsize;
                 height: $avatarsize;
@@ -86,3 +94,42 @@ $avatarsize: 150px;
         }
     }
 }
+
+
+.gallery {
+    height: 825px;
+    background-color: gray;
+    overflow: scroll;
+
+    .container {
+        margin-top: 50px;        
+
+        .gallerytainer {
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+            width: 960px;
+
+            .galleryimgbox {
+                display: inline-block;
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                border: 1px solid black;
+
+                .caption {
+                    background-color: rgba(128, 128, 128, 0.4);
+                    position: absolute;
+                    top: 0;
+                    display: block;
+                    display: none;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+        }    
+    }
+}
+
+

@@ -26,11 +26,13 @@
 
         <div class="container">
             <div class="inputtainer">
-                <input class="username"></input>
-                <input class="email"></input>
-                <input class="location"></input>
-                <input class="profilepic"></input>
-                <input class="imgcaption"></input>
+                <input id='usern'class="in-username"></input>
+                <input id='emai'class="in-email"></input>
+                <input id='loca'class="in-location"></input>
+                <input id='prop'class="in-profilepic"></input>
+                <input id='gali'class="in-galleryimg"></input>
+                <input id='cap'class="in-imgcaption"></input> <br>
+                <button class="submit">submit</button>
             </div>
         </div>
 
@@ -40,13 +42,33 @@
             </div>
         </div>
 
+
+        <div class="gallery">
+            <div class="container">
+                <div class="gallerytainer">
+                </div>                
+            </div>
+        </div>
+
+
          <script class="avatar-template" type="text/template">
              <div class="avatar">
-                <img class="avatarimage"src="<%= image %>">
+                <img class="avatarimage"src="<%= profilepic %>">
                 <div class="caption">
                     <span class="avatarusername"><%= avatarusername %></span>
                 </div>   
              </div>
+        </script>
+         <script class="gallery-template" type="text/template">
+                <div class="galleryimgbox">
+                    <img class="galleryimg"src="<%= galleryimage %>">
+                    <div class="caption">
+                        <span class="imgcaption"><%= caption %></span>
+                        <span class="avatarusername"><%= avatarusername %></span>
+                        <span class="avatarlocation"><%= avatarlocation %></span>
+                        <span class="avataremail"><%= avataremail %></span>
+                    </div>   
+                </div>
         </script>
  
 <!--                <span class="avataremail"><%= avataremail %></span>

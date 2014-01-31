@@ -20,21 +20,64 @@
         <!-- endbuild -->
     </head>
     <body>
+        
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="container">
-            <div class="inputtainer">
-                <input value="hi" id='usern'class="in-username"></input>
-                <input value="ehrehreh@gmail.com"id='emai'class="in-email"></input>
-                <input value="greenville"id='loca'class="in-location"></input>
-                <input value="http://blog.gettyimages.com/wp-content/uploads/2012/10/NASCAR-Taladega-Chris-Graythen-Getty-Images-154895556-e1351523998575.jpg"id='prop'class="in-profilepic"></input>
-                <input value="http://www.hdwallpapers3g.com/wp-content/uploads/2014/01/Images-1.jpg"id='gali'class="in-galleryimg"></input>
-                <input value="This is the caption for the image"id='cap'class="in-imgcaption"></input><br>
-                <button class="submit">submit</button>
+
+
+
+        <!-- ////////////////////////// HEADER //////////////////////// -->
+
+
+        <div class="header">
+            <img class="picshare-sub-logo" src="images/picsharesublogo.png">
+            <h1>PICSHARE</h1>
+            <div class="container">
+
             </div>
         </div>
+
+
+
+        <!-- ////////////////////////// LANDING PAGE ////////////////////////// -->
+        
+
+        <div class="landing-page">
+            <img class="background" src="images/backgroundnew.jpg">
+            <div class="logo">
+                <img class="picshare-main-logo" src="images/picsharelogowhite.png"> 
+            </div>
+        </div>  
+
+
+
+        <!-- /////////////////////////// INPUT ////////////////////////// -->
+        
+
+
+        <div class="inputbanner">
+            <div class="container">
+                <div class="inputfield">
+                    <div class="inputtainer">
+                        <input value="hi"                   id='usern'      class="in-username"></input>
+                        <input value="ehrehreh@gmail.com"   id='emai'       class="in-email"></input>
+                        <input value="greenville"           id='loca'       class="in-location"></input>
+                        <!-- look at the type and the name to try and fix the other img uploader input -->
+                        <input type='file' name= 'image' value="http://blog.gettyimages.com/wp-content/uploads/2012/10/NASCAR-Taladega-Chris-Graythen-Getty-Images-154895556-e1351523998575.jpg"id='prop'class="in-profilepic"></input>
+                        <input value="http://www.hdwallpapers3g.com/wp-content/uploads/2014/01/Images-1.jpg"                                id='gali'       class="in-galleryimg"></input>
+                        <input value="This is the caption for the image"id='cap'class="in-imgcaption"></input><br>
+                        <button class="submit">submit</button>
+                    </div>    
+                </div>  
+            </div>  
+        </div>
+           
+
+        <!-- //////////////////////// AVATAR SECTION ////////////////////////// -->
+
+
 
         <div class="avatarbanner">
             <div class="container">
@@ -43,13 +86,25 @@
         </div>
 
 
-        <div class="gallery">
+
+        <!-- //////////////////////// PHOTO GALLERY /////////////////////////// -->
+
+
+        <div class="bannertwo">
             <div class="container">
                 <div class="gallerytainer">
             
                 </div>                
             </div>
         </div>
+
+
+
+        <!-- //////////////////////////// FOOTER ////////////////////////////// -->
+    
+        <div class="footer"></div>
+        
+
 
 
          <script class="avatar-template" type="text/template">
@@ -93,5 +148,6 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-</body>
+    </body>
+
 </html>

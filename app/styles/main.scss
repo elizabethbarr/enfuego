@@ -9,11 +9,6 @@ body * {
   vertical-align: top;
 }
 
-.background {
-        z-index: 10;
-        height: 855px;
-        width: 100%;
-    }
 
 .container {
   width: 960px;
@@ -22,34 +17,83 @@ body * {
 }
 
 .header {
-    position: absolute;
+    z-index: 6;
+    text-align: center;
+    position: fixed;
     letter-spacing: 2px;
     display: block;
     width: 100%;
     padding-right: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(255, 255, 255, .9);
     height: 75px;
 
+
+    .picshare-sub-logo {
+        opacity: .9;
+        display: inline-block;
+        padding-top: 12px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 5px;
+        left: 15px;
+    }
+
     h1 {
+        display: inline-block;
         letter-spacing: 10px;
         font-weight: 100;
         line-height: 75px;
-        color: white;
-        text-align: center;
+        color: black;
         padding: 0;
         margin: 0;
+
     }
 }
 
-.header .container * {
-    display: inline-block;
-    color: white;
-    position: relative;
+.landing-page {
+    text-align: center;
+    position: fixed;
+    height: auto;
+    width: 100%;
+
+    .background {
+            left: 0px;
+            position: absolute;
+            z-index: 4;
+            height: auto;
+            width: 100%;
+                
+    }
+
+    .logo {
+
+        .picshare-main-logo {
+            top: 250px;
+            position: relative;
+            z-index: 5;
+            display: inline;
+            width: 450px;
+            height: auto;
+        }
+    }
 }
 
-.landing-page {
-    height: 780px;
+.avatarbanner {
+    position: relative;
+    top: 855px;
     width: 100%;
+    height: 400px;
+    background-color: silver;
+
+}
+
+.bannertwo {
+    position: relative;
+    top: 855px;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, .5);
 
 }

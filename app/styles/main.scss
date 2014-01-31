@@ -80,20 +80,37 @@ body * {
     }
 }
 
+.inputbanner {
+    position: relative;
+    top: 855px;
+    width: 100%;
+    height: 400px;
+
+    .inputfield {
+        z-index: 5;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        width: 650px;
+        height: 300px;
+        background-color: rgba(226, 226, 224, .9);
+        border-radius: 6px;
+    }
+}
+
 .avatarbanner {
     position: relative;
     top: 855px;
     width: 100%;
     height: 400px;
-    background-color: silver;
+    background-color: rgba(0, 0, 0, .8);
 
 }
 
-.bannertwo {
+.footer {
     position: relative;
     top: 855px;
     width: 100%;
-    height: 400px;
-    background-color: rgba(0, 0, 0, .5);
-
+    height: 250px;
+    background-color: rgb(92, 155, 135);
 }

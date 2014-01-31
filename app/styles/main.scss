@@ -1,28 +1,116 @@
 body {
-    background: #fafafa;
+    margin: 0;
+    padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
+body * {
+  vertical-align: top;
+}
+
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+    z-index: 6;
+    text-align: center;
+    position: fixed;
+    letter-spacing: 2px;
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, .9);
+    height: 75px;
+
+
+    .picshare-sub-logo {
+        opacity: .9;
+        display: inline-block;
+        padding-top: 12px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 5px;
+        left: 15px;
+    }
+
     h1 {
-        font-size: 60px;
-        line-height: 1;
-        letter-spacing: -1px;
+        display: inline-block;
+        letter-spacing: 10px;
+        font-weight: 100;
+        line-height: 75px;
+        color: black;
+        padding: 0;
+        margin: 0;
+
     }
 }
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+.landing-page {
+    text-align: center;
+    position: fixed;
+    height: auto;
+    width: 100%;
+
+    .background {
+            left: 0px;
+            position: absolute;
+            z-index: 4;
+            height: auto;
+            width: 100%;
+                
+    }
+
+    .logo {
+
+        .picshare-main-logo {
+            top: 250px;
+            position: relative;
+            z-index: 5;
+            display: inline;
+            width: 450px;
+            height: auto;
+        }
+    }
+}
+
+.inputbanner {
+    position: relative;
+    top: 855px;
+    width: 100%;
+    height: 400px;
+
+    .inputfield {
+        z-index: 5;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        width: 650px;
+        height: 300px;
+        background-color: rgba(226, 226, 224, .9);
+        border-radius: 6px;
+    }
+}
+
+.avatarbanner {
+    position: relative;
+    top: 855px;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, .8);
+
+}
+
+.footer {
+    position: relative;
+    top: 855px;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(92, 155, 135);
 }

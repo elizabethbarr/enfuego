@@ -1,121 +1,154 @@
 body {
-    background: #fafafa;
+    margin: 0;
+    padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
 
-.grande-container {
-    border: 1px solid purple;
-    width: 960px;
+body * {
+  vertical-align: top;
 }
 
+.container {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
 
 .header {
-    border: 1px solid red;
-    width: 960px;
+    z-index: 6;
+    text-align: center;
+    position: fixed;
+    letter-spacing: 2px;
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, .9);
     height: 75px;
 
+
+    .picshare-sub-logo {
+        opacity: .9;
+        display: inline-block;
+        padding-top: 12px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 5px;
+        left: 15px;
+    }
+
+    h1 {
+        display: inline-block;
+        letter-spacing: 10px;
+        font-weight: 100;
+        line-height: 75px;
+        color: black;
+        padding: 0;
+        margin: 0;
+
+    }
 }
 
 .landing-page {
-    border: 1px solid black;
-    width: 960px;
-    height: 855px;
+    text-align: center;
+    position: fixed;
+    height: auto;
+    width: 100%;
+
+    .background {
+            left: 0px;
+            position: absolute;
+            z-index: 4;
+            height: auto;
+            width: 100%;
+                
+    }
+
+    .logo {
+
+        .picshare-main-logo {
+            top: 250px;
+            position: relative;
+            z-index: 5;
+            display: inline;
+            width: 450px;
+            height: auto;
+        }
+    }
+}
+
+.inputbanner {
+    position: relative;
+    top: 855px;
+    width: 100%;
+    height: 400px;
+
+    .inputfield {
+        z-index: 5;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        width: 650px;
+        height: 300px;
+        background-color: rgba(226, 226, 224, .9);
+        border-radius: 6px;
+
+
+        .top-line {
+            width: 650px;
+            height: 100px;
+            display: inline-block; 
+            
+            .name-box {
+
+            } 
+
+            .email-box {
+
+            } 
+
+            .location-box {
+
+            } 
+
+            .avatar-box {
+
+            }
+
+            .images-box {
+
+            }
+
+            .caption-box {
+
+            }
+        }
+    }
+}
+
+
+.avatarbanner {
+    position: relative;
+    top: 855px;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, .8);
 
 }
 
-.logo {
-    border: 1px solid red;
-    width: 960px;
-    height: 300px;
-}
-
-.page-two {
-    border: 1px solid blue;
-    width: 960px;
-
-}
-
-.submit-container {
-    border: 1px solid red;
-    width: 960px;
-    height: 855px;
-    margin: 0, auto;
-}
-
-.top-line {
-    border: 1px solid black;
-    width: 960px;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.name-box {
-    border: 1px solid black;
-    height: 125px;
-    width: 294px;
-    margin-left: 20px;
-
-}
-
-.email-box {
-    border: 1px solid black;
-    height: 125px;
-    width: 294px;
-    padding-left: 20px;
-
-}
-
-.location-box {
-    border: 1px solid black;
-    height: 125px;
-    width: 294px;
-
-}
-
-.avatar-box {
-    border: 1px solid black;
-    height: 125px;
-    width: 920px;
-    margin: 20px 0 0 20px;
-
-}
-
-.images-box {
-    border: 1px solid black;
-    height: 125px;
-    width: 920px;
-    margin: 20px 0 0 20px;
-
-}
-
-.caption-box {
-    border: 1px solid black;
-    height: 375px;
-    width: 920px;
-    margin: 20px 0 0 20px;
-
-}
-
-.avatars {
-    border: 1px solid black;
-    width: 960px;
-    width: 250px;
-}
-
-.page-three {
-    border: 1px solid blue;
-    width: 960px;
-}
-
-.photo-gallery {
-    border: 1px solid purple;
-    width: 960px;
-    height: 855px;
+.bannertwo {
+    
 }
 
 .footer {
-    border: 1px solid green;
-    width: 960px;
-    height: 125px;
+    position: relative;
+    top: 855px;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(92, 155, 135);
 }
+
+
+

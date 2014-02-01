@@ -34,9 +34,7 @@
         <div class="header">
             <img class="picshare-sub-logo" src="images/picsharesublogo.png">
             <h1>PICSHARE</h1>
-            <div class="container">
-
-            </div>
+            <div class="container"></div>
         </div>
 
 
@@ -65,7 +63,7 @@
                         <input value="ehrehreh@gmail.com"   id='emai'       class="in-email"></input>
                         <input value="greenville"           id='loca'       class="in-location"></input>
                         <!-- look at the type and the name to try and fix the other img uploader input -->
-                        <input type='file' name= 'image' value="http://blog.gettyimages.com/wp-content/uploads/2012/10/NASCAR-Taladega-Chris-Graythen-Getty-Images-154895556-e1351523998575.jpg"id='prop'class="in-profilepic"></input>
+                        <input value="http://blog.gettyimages.com/wp-content/uploads/2012/10/NASCAR-Taladega-Chris-Graythen-Getty-Images-154895556-e1351523998575.jpg"id='prop'class="in-profilepic"></input>
                         <input value="http://www.hdwallpapers3g.com/wp-content/uploads/2014/01/Images-1.jpg"                                id='gali'       class="in-galleryimg"></input>
                         <input value="This is the caption for the image"id='cap'class="in-imgcaption"></input><br>
                         <button class="submit">submit</button>
@@ -92,20 +90,23 @@
 
         <div class="bannertwo">
             <div class="container">
+                <span class="gallery-title">Gallery</span>
                 <div class="gallerytainer">
             
                 </div>                
             </div>
         </div>
 
-
+        <div class="transsheet"></div>
+        <div class="popupbox">
+            <a class="popupboxclose">Close</a>    
+        </div>
 
         <!-- //////////////////////////// FOOTER ////////////////////////////// -->
     
-        <div class="footer"></div>
-        
+        <!-- place a footer in here -->
 
-
+       
 
          <script class="avatar-template" type="text/template">
              <div class="avatar">
@@ -118,7 +119,7 @@
          
          <script class="gallery-template" type="text/template">
                 <div class="galleryimgbox">
-                    <img class="galleryimg"src="<%= url %>">
+                    <img class="galleryimg" src="<%= url %>"/>
                     <div class="caption">
                         <span class="imgcaption"><%= caption %></span>
                     </div>   

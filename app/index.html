@@ -34,9 +34,7 @@
         <div class="header">
             <img class="picshare-sub-logo" src="images/picsharesublogo.png">
             <h1>PICSHARE</h1>
-            <div class="container">
-
-            </div>
+            <div class="container"></div>
         </div>
 
 
@@ -56,88 +54,89 @@
         <!-- /////////////////////////// INPUT ////////////////////////// -->
         
 
-
-        <div class="inputbanner">
-            <div class="container">
-                <div class="inputfield">
-                    <div class="inputtainer">
-                        <input value="hi"                   id='usern'      class="in-username"></input>
-                        <input value="ehrehreh@gmail.com"   id='emai'       class="in-email"></input>
-                        <input value="greenville"           id='loca'       class="in-location"></input>
-                        <!-- look at the type and the name to try and fix the other img uploader input -->
-                        <input type='file' name= 'image' value="http://blog.gettyimages.com/wp-content/uploads/2012/10/NASCAR-Taladega-Chris-Graythen-Getty-Images-154895556-e1351523998575.jpg"id='prop'class="in-profilepic"></input>
-                        <input value="http://www.hdwallpapers3g.com/wp-content/uploads/2014/01/Images-1.jpg"                                id='gali'       class="in-galleryimg"></input>
-                        <input value="This is the caption for the image"id='cap'class="in-imgcaption"></input><br>
-                        <button class="submit">submit</button>
-                    </div>    
+        <div class="content">
+            <div class="inputbanner">
+                <div class="container">
+                    <div class="inputfield">
+                        <div class="inputtainer">
+                            <input value="hi"                   id='usern'      class="in-username"></input>
+                            <input value="ehrehreh@gmail.com"   id='emai'       class="in-email"></input>
+                            <input value="greenville"           id='loca'       class="in-location"></input>
+                            <!-- look at the type and the name to try and fix the other img uploader input -->
+                            <input value="http://blog.gettyimages.com/wp-content/uploads/2012/10/NASCAR-Taladega-Chris-Graythen-Getty-Images-154895556-e1351523998575.jpg"id='prop'class="in-profilepic"></input>
+                            <input value="http://www.hdwallpapers3g.com/wp-content/uploads/2014/01/Images-1.jpg"                                id='gali'       class="in-galleryimg"></input>
+                            <input value="This is the caption for the image"id='cap'class="in-imgcaption"></input><br>
+                            <button class="submit">submit</button>
+                        </div>    
+                    </div>  
                 </div>  
-            </div>  
-        </div>
+            </div>
            
 
         <!-- //////////////////////// AVATAR SECTION ////////////////////////// -->
 
 
 
-        <div class="avatarbanner">
-            <div class="container">
-                <div class="ceneteravatarcontainer">
-                    <h1>CHOOSE YOUR PROFILE BELOW</h1>
+            <div class="avatarbanner">
+                <div class="container">
+                    <div class="ceneteravatarcontainer">
+                        <h1>CHOOSE YOUR PROFILE BELOW</h1>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
 
-        <!-- //////////////////////// PHOTO GALLERY /////////////////////////// -->
+            <!-- //////////////////////// PHOTO GALLERY /////////////////////////// -->
 
 
-        <div class="bannertwo">
-            <div class="container">
-                <div class="gallerytainer">
-            
-                </div>                
+            <div class="bannertwo">
+                <div class="container">
+                    <span class="gallery-title">Gallery</span>
+                    <div class="gallerytainer">
+                
+                    </div>                
+                </div>
             </div>
-        </div>
-
-
 
         <!-- //////////////////////////// FOOTER ////////////////////////////// -->
-        <footer>
-            <div class="footer">
-                <div class="container">
-                        <div class="connect">
-                          <h1>Connect with us at The Iron Yard</h1>
-                          <p class="first">Be the first to sign up and share your memories with friends and family on Picshare.
-                        </div>
-                        <div class="social">
-                            <ul class="footer-social">
-                              <li class="social-channel">
-                                <img src="images/facebook.svg">
-                                <span>Like us on Facebook</span>
-                              </li>
-                              <li class="social-channel">
-                                <img src="images/twitter.svg">
-                                <span>Follow us on Twitter</span>
-                              </li>
-                              <li class="social-channel">
-                                <img src="images/googleplus.svg">
-                                <span>+ 1 us on Google</span>
-                              </li>
-                            </ul>
-                        </div>
+        
+            <footer>
+                <div class="footer">
+                    <div class="container">
+                            <div class="connect">
+                              <h1>Connect with us at The Iron Yard</h1>
+                              <p class="first">Be the first to sign up and share your memories with friends and family on Picshare.
+                            </div>
+                            <div class="social">
+                                <ul class="footer-social">
+                                  <li class="social-channel">
+                                    <img src="images/facebook.svg">
+                                    <span>Like us on Facebook</span>
+                                  </li>
+                                  <li class="social-channel">
+                                    <img src="images/twitter.svg">
+                                    <span>Follow us on Twitter</span>
+                                  </li>
+                                  <li class="social-channel">
+                                    <img src="images/googleplus.svg">
+                                    <span>+ 1 us on Google</span>
+                                  </li>
+                                </ul>
+                            </div>
+                    </div>
                 </div>
-            </div>
-              
+                  
 
 
         <!-- /////////////////////////// SUBFOOTER //////////////////////////// -->
-    
-            <div class="subfooter"></div>
-        </footer>
         
-
-
+                <div class="subfooter"></div>
+            </footer>
+        </div>
+        
+        <!-- ///////////////////// JAVASCRIPT TEMPLATES /////////////////////// -->
+       
 
          <script class="avatar-template" type="text/template">
              <div class="avatar">
@@ -150,7 +149,7 @@
          
          <script class="gallery-template" type="text/template">
                 <div class="galleryimgbox">
-                    <img class="galleryimg"src="<%= url %>">
+                    <img class="galleryimg" src="<%= url %>"/>
                     <div class="caption">
                         <span class="imgcaption"><%= caption %></span>
                     </div>   

@@ -2,11 +2,50 @@
 
 // this little section is setting up a small database for proof of concept purposes
 userData = [
-  
-    {
-    avatarusername: 'Cloud',
-    avataremail: 'rainmaker@gmail.com',
-    avatarlocation: 'Cloud 9',
+  {
+    avatarusername: 'Bertman45',
+    avataremail: 'bertman45@gmail.com',
+    avatarlocation: 'Greenville',
+    profilepic: 'http://lorempixel.com/150/150/',
+    images: [
+        {
+          url:'http://lorempixel.com/400/200/',
+          caption: 'this is a test img'
+        }, 
+        {
+          url:'http://lorempixel.com/400/200/',
+          caption: 'this is a test img'
+        }, 
+        {
+          url:'http://lorempixel.com/400/200/',
+          caption: 'this is a test img'
+        }
+      ]
+  },
+  {
+    avatarusername: 'Jeremyson',
+    avataremail: 'jcrawford.design@gmail.com',
+    avatarlocation: 'Greenville',
+    profilepic: 'http://lorempixel.com/150/150/',
+    images: [
+        {
+          url:'http://lorempixel.com/400/200/',
+          caption: 'this is a test img'
+        }, 
+        {
+          url:'http://lorempixel.com/400/200/',
+          caption: 'this is a test img'
+        }, 
+        {
+          url:'http://lorempixel.com/400/200/',
+          caption: 'this is a test img'
+        }
+      ]
+  },
+  {
+    avatarusername: 'Elizbarr',
+    avataremail: 'elizbarr@gmail.com',
+    avatarlocation: 'Greenville',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
@@ -24,9 +63,9 @@ userData = [
       ]
   },
     {
-    avatarusername: 'BestUserNameEver',
-    avataremail: 'iamthebest@gmail.com',
-    avatarlocation: 'Wouldn\'t you like to know',
+    avatarusername: 'LingBoard',
+    avataremail: 'board@gmail.com',
+    avatarlocation: 'Ohio',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
@@ -44,49 +83,9 @@ userData = [
       ]
   },
     {
-    avatarusername: 'ChipsAhoyMcCoy',
-    avataremail: 'cookiemonster@gmail.com',
-    avatarlocation: 'Jar near You',
-    profilepic: 'http://lorempixel.com/150/150/',
-    images: [
-        {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
-        }, 
-        {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
-        }, 
-        {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
-        }
-      ]
-  },
-    {
-    avatarusername: 'Mine',
-    avataremail: 'reallymine@gmail.com',
-    avatarlocation: 'My House',
-    profilepic: 'http://lorempixel.com/150/150/',
-    images: [
-        {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
-        }, 
-        {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
-        }, 
-        {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
-        }
-      ]
-  },
-    {
-    avatarusername: 'Batman',
-    avataremail: 'jokerisntfunny@gmail.com',
-    avatarlocation: 'exit 49A',
+    avatarusername: 'EnFuego',
+    avataremail: 'icepack@gmail.com',
+    avatarlocation: 'Equator',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
@@ -147,19 +146,30 @@ $('.submit').click(function(){
     userData.push(userperson);
   
     var useravatartemplate = _.template($('.avatar-template').text());
-    var usergallerytemplate = _.template($('.gallery-template').text());
+    var usergallerytemplate  = _.template($('.gallery-template').text());
   
-    var lastUser = _.last(userData);
-    var lastUserImgs = lastUser.images;
+    var lastFiveUsers = _.last(userData, 5);
   
-    $('.ceneteravatarcontainer').append(useravatartemplate(lastUser));
-    
-    _.each(lastUserImgs,function(image, index){
-      $('.gallerytainer').append(usergallerytemplate(image));  
+    $('.avatar').remove();
+
+    _.each(lastFiveUsers, function(avatar) {
+    $('.ceneteravatarcontainer').append(useravatartemplate(avatar));
     });
     
-    $('.avatar').hover(function() {
-      $(this).children('.caption').slideDown('slow')
+    $('.galleryimgbox').remove();
+
+    _.each(lastFiveUsers, function(avatar) {
+      _.each(avatar.images, function(image, index){
+      $('.gallerytainer').append(usergallerytemplate(image));
+      });
+    });
+
+    $('.avatar').mouseover(function() {
+      $(this).children('.caption').show()
+    });
+
+    $('.avatar').mouseout(function() {
+      $(this).children('.caption').hide()
     });
 //   var usergallerytemplate = _.template($('.gallery-template').text());
 
@@ -183,6 +193,7 @@ var usergallerytemplate = _.template($('.gallery-template').text());
   $('.ceneteravatarcontainer').append(useravatartemplate(user));
  });
 
+
  // _.each(userData, function(user,index){
  //  $('.gallery').children('.container').append(usergallerytemplate(user));
  // });
@@ -202,13 +213,4 @@ $('.avatar').mouseover(function() {
 $('.avatar').mouseout(function() {
   $(this).children('.caption').hide()
 });
-
-
-
-
-
-
-
-
-
 

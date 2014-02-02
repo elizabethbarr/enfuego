@@ -1,5 +1,5 @@
 body {
-    // vertical-align: top;
+    vertical-align: top;
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -82,143 +82,153 @@ body * {
     }
 }
 
-.inputbanner {
+.content {
     position: relative;
     top: 855px;
-    width: 100%;
-    height: 400px;
 
-    .inputfield {
-        z-index: 5;
-        margin: 0 auto;
-        text-align: center;
+    .inputbanner {
         position: relative;
-        width: 650px;
-        height: 300px;
-        background-color: rgba(226, 226, 224, .9);
-        border-radius: 6px;
+        width: 100%;
+        height: 400px;
 
-        .inputtainer {
-            text-align: center;
-            margin: auto auto  ;
-            width: 100%;
-
-            .in-username {
-                width: 100px;
-            }
-
-            .in-email {
-                width: 200px;
-            }
-
-            .in-location {
-                width: 150px;
-            }
-
-            .in-profilepic {
-                width: 500px;
-            }    
-
-            .in-galleryimg {
-                width: 500px;
-            }
-
-            .in-imgcaption {
-                width: 500px;
-            }
-        }
-    }
-}
-
-$avatarsize: 150px;
-
-.avatarbanner {
-    position: relative;
-    top: 855px;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    background-color: rgba(92, 155, 135, .9);
-
-    .ceneteravatarcontainer {
-        text-align: center;
-        margin: 50px auto;
-        width: 960px;
-
-        h1 {
-            letter-spacing: 7px;
-            font-weight: 100;
-            line-height: 75px;
-            color: white;
-            font-size: 36px;
-        }
-
-        .avatar {
-            padding: 10px;
-            position: relative;
-            display: inline-block;
+        .inputfield {
+            z-index: 5;
             margin: 0 auto;
-            height: $avatarsize;
-            width: $avatarsize;
-            border-radius: $avatarsize;
+            text-align: center;
+            position: relative;
+            width: 650px;
+            height: 300px;
+            background-color: rgba(226, 226, 224, .9);
+            border-radius: 6px;
 
-            .avatarimage {
-                border: solid 2px white;
-                border-radius: $avatarsize;
-                height: $avatarsize;
-                width: $avatarsize;
-            }
-
-            .caption {
-                border-radius: $avatarsize;
-                width: $avatarsize;
-                height: $avatarsize;
-                background-color: rgba(45, 45, 45, .6);
-                position: absolute;
-                line-height: $avatarsize;
-                top: 12px;
-                left: 12px;
-                display: block;
-                display: none;
+            .inputtainer {
                 text-align: center;
-                font-size: 16px;
-                color: #fff;
+                margin: auto auto  ;
+                width: 100%;
+
+                .in-username {
+                    width: 100px;
+                }
+
+                .in-email {
+                    width: 200px;
+                }
+
+                .in-location {
+                    width: 150px;
+                }
+
+                .in-profilepic {
+                    width: 500px;
+                }    
+
+                .in-galleryimg {
+                    width: 500px;
+                }
+
+                .in-imgcaption {
+                    width: 500px;
+                }
             }
         }
     }
-}
 
-.bannertwo {
-    position: relative;
-    top: 1500px;
-    background-color: silver;
-    width: 100%;
-    
-    .gallery {
-        height: 825px;
-        background-color: gray;
-        overflow: scroll;
+    $avatarsize: 150px;
+
+    .avatarbanner {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        background-color: rgba(92, 155, 135, .9);
+
+        .ceneteravatarcontainer {
+            text-align: center;
+            margin: 50px auto;
+            width: 960px;
+
+            h1 {
+                letter-spacing: 7px;
+                font-weight: 100;
+                line-height: 75px;
+                color: white;
+                font-size: 36px;
+            }
+
+            .avatar {
+                padding: 10px;
+                position: relative;
+                display: inline-block;
+                margin: 0 auto;
+                height: $avatarsize;
+                width: $avatarsize;
+                border-radius: $avatarsize;
+
+                .avatarimage {
+                    border: solid 2px white;
+                    border-radius: $avatarsize;
+                    height: $avatarsize;
+                    width: $avatarsize;
+                }
+
+                .caption {
+                    border-radius: $avatarsize;
+                    width: $avatarsize;
+                    height: $avatarsize;
+                    background-color: rgba(45, 45, 45, .6);
+                    position: absolute;
+                    line-height: $avatarsize;
+                    top: 12px;
+                    left: 12px;
+                    display: block;
+                    display: none;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+
+    .bannertwo {
+        position: relative;
+        height: 980px;
+        width: 100%;
+        background-color: rgba(226, 226, 224, .9);
 
         .container {
-            margin-top: 50px;        
+            margin-top: 20px; 
+            text-align: center;
+            border-radius: 6px;
 
+            .gallery-title {
+                font-size: 50px;
+                color: #fff;
+            }
             .gallerytainer {
+                overflow-x: hidden;
+                overflow-y: scroll; 
                 position: relative;
                 text-align: center;
-                margin: 0 auto;
-                width: 960px;
+                margin: 20px auto 0;
+                height: 850px;
+                width: 100%;
+
+                $imagesize: 180px;
 
                 .galleryimgbox {
                     display: inline-block;
-                    width: 300px;
-                    height: 300px;
-                    margin: 0 auto;
-                    border: 1px solid black;
+                    width: $imagesize;
+                    height: $imagesize;
+                    margin: 2px 2px;
 
-                .galleryimg {
-                    width: 300px;
-                    height: 300px;
-                }
+                    .galleryimg {
+                        border-radius: 6px;
+                        width: $imagesize;
+                        height: $imagesize;
+                    }
+
                     .caption {
                         background-color: rgba(128, 128, 128, 0.4);
                         position: absolute;
@@ -230,68 +240,68 @@ $avatarsize: 150px;
                         color: #fff;
                     }
                 }
-            }    
-        }
-    }
-}
-
-.footer {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    background-color: rgb(45, 45, 45);
-
-    .connect {
-        text-align: center;
-        
-        h1  {
-            opacity: .6;
-            padding-top: 49px;
-            letter-spacing: 4px;
-            color: white;
-            font-weight: 100;
-            font-size: 32px;
-        }
-
-        p   {
-            padding-top: 7px;
-            opacity: .6;
-            color: white;
-            font-weight: 200;
-            font-size: 14px;
+            }             
         }
     }
 
-    .social {
-        text-align: center;
+    .footer {
         position: relative;
-        padding-top: 80px;
+        width: 100%;
+        height: 300px;
+        background-color: rgb(45, 45, 45);
 
-        .footer-social {
-            display: inline-block;
-            color: white;
-            margin: 0 auto;
-            padding: 10px;
-            list-style: none;
-
-            .social-channel {
+        .connect {
+            text-align: center;
+            
+            h1  {
                 opacity: .6;
-                display: inline-block;
-                margin: 0 auto;
+                padding-top: 49px;
+                letter-spacing: 4px;
                 color: white;
-                padding: 10px;
-                font-size: 12px;
-                letter-spacing: 1px;
-                line-height: 25px;
+                font-weight: 100;
+                font-size: 32px;
             }
 
+            p   {
+                padding-top: 7px;
+                opacity: .6;
+                color: white;
+                font-weight: 200;
+                font-size: 14px;
+            }
+        }
+
+        .social {
+            text-align: center;
+            position: relative;
+            padding-top: 80px;
+
+            .footer-social {
+                display: inline-block;
+                color: white;
+                margin: 0 auto;
+                padding: 10px;
+                list-style: none;
+
+                .social-channel {
+                    opacity: .6;
+                    display: inline-block;
+                    margin: 0 auto;
+                    color: white;
+                    padding: 10px;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    line-height: 25px;
+                }
+
+            }
         }
     }
-}
 
-.subfooter {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    background-color: rgb(92, 155, 135);
+    .subfooter {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(92, 155, 135);
+    }
 }

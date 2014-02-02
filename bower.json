@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "jquery": "~1.10.2",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "jquery-ui": "~1.10.3"
   },
   "devDependencies": {}
 }

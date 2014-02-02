@@ -1,5 +1,5 @@
 body {
-    // vertical-align: top;
+    vertical-align: top;
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -134,14 +134,14 @@ $avatarsize: 150px;
     position: relative;
     top: 855px;
     width: 100%;
-    height: 200px;
+    height: 150px;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, .8);
 
     .ceneteravatarcontainer {
         text-align: center;
         margin: 0 auto;
         width: 775px;
+    background-color: rgba(0, 0, 0, .8);
 
         .avatar {
             position: relative;
@@ -175,57 +175,104 @@ $avatarsize: 150px;
     }
 }
 
+
 .bannertwo {
     position: relative;
-    top: 1500px;
-    background-color: silver;
+    top: 1250px;
+    height: 980px;
     width: 100%;
-    
-    .gallery {
-        height: 825px;
-        background-color: gray;
-        overflow: scroll;
+    background-color: rgba(226, 226, 224, .9);
 
-        .container {
-            margin-top: 50px;        
+    .container {
+        margin-top: 20px; 
+        text-align: center;
+        border-radius: 6px;
 
-            .gallerytainer {
-                position: relative;
-                text-align: center;
-                margin: 0 auto;
-                width: 960px;
+        .gallery-title {
+            font-size: 50px;
+            color: #fff;
+        }
+        .gallerytainer {
+            overflow-x: hidden;
+            overflow-y: scroll; 
+            position: relative;
+            text-align: center;
+            margin: 20px auto 0;
+            height: 850px;
+            width: 100%;
 
-                .galleryimgbox {
-                    display: inline-block;
-                    width: 300px;
-                    height: 300px;
-                    margin: 0 auto;
-                    border: 1px solid black;
+            $imagesize: 180px;
+
+            .galleryimgbox {
+                display: inline-block;
+                width: $imagesize;
+                height: $imagesize;
+                margin: 2px 2px;
 
                 .galleryimg {
-                    width: 300px;
-                    height: 300px;
+                    border-radius: 6px;
+                    width: $imagesize;
+                    height: $imagesize;
                 }
-                    .caption {
-                        background-color: rgba(128, 128, 128, 0.4);
-                        position: absolute;
-                        top: 0;
-                        display: block;
-                        display: none;
-                        text-align: center;
-                        font-size: 16px;
-                        color: #fff;
-                    }
+
+                .caption {
+                    background-color: rgba(128, 128, 128, 0.4);
+                    position: absolute;
+                    top: 0;
+                    display: block;
+                    display: none;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #fff;
                 }
-            }    
-        }
+            }
+        }             
     }
 }
 
-.footer {
-    position: relative;
-    top: 855px;
-    width: 100%;
+.transsheet {
+  display: none;
+  position: fixed;
+  top: 80px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 80;
+}
+
+.popupbox { 
+    display:none; /* Hide the DIV */
+    position:fixed;  
+    height:500px; 
+    box-shadow: 1px 1px 15px #6c6c6c;
+    width:960px;  
+    background:#fff;  
+    border: 5px solid #6c6c6c;
+    left: 150px;
+    top: 200px;
+    z-index:100; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+    margin-left: 15px; 
+
+
+  .scrollimg {
+    display: inline-block;
     height: 300px;
-    background-color: rgb(92, 155, 135);
+    margin-top: 20px;
+    width: 100%;
+
+
+    .scrimg {
+      display: inline-block;
+      margin: 5px 5px;
+      float: left;
+    }
+  }
+  .popupboxclose {
+    font-size:20px;  
+    line-height:15px;  
+    right:5px;  
+    top:5px;  
+    position:absolute;  
+    font-weight:500;      
+  }
 }

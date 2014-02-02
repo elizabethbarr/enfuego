@@ -93,10 +93,10 @@ body * {
 
         .inputfield {
             z-index: 5;
-            margin: 0 auto;
             text-align: center;
+            margin: auto auto;
+            width: 100%;
             position: relative;
-            width: 650px;
             height: 300px;
             background-color: rgba(226, 226, 224, .9);
             border-radius: 6px;
@@ -104,23 +104,60 @@ body * {
             .inputtainer {
                 text-align: center;
                 margin: auto auto  ;
-                width: 100%;
+                width: 650px;
 
-                .in-username {
-                    width: 100px;
+                .join-cont {
+                    padding-top: 20px;
+                    width: 100%;
+                
+
+                    .join {
+                        font-weight: 100;
+                        font-size: 32px;
+                        letter-spacing: 2px;
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    .easy {
+                        font-weight: 100;
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                        width: 100%;
+                        line-height: 3px;
+                    }
                 }
 
-                .in-profilepic {
-                    width: 500px;
-                }    
+                    .in-username {
+                        margin-top: 20px;
+                        width: 550px;
+                        height: 20px;
+                    }
 
-                .in-galleryimg {
-                    width: 500px;
+                    .in-profilepic {
+                        width: 550px;
+                        margin-top: 20px;
+                        height: 20px;
+                    }    
+
+                    .in-galleryimg {
+                        width: 550px;
+                        margin-top: 20px;
+                        height: 20px;
+                    }
+
+                    .submit {
+                        margin-top: 20px;
+                        width: 100px;
+                        height: 40px;
+                        border-radius: 4px;
+                        font-size: 18px;
+                    }
                 }
-
-            }
+            }  
         }
-    }
+      
+
 
     $avatarsize: 150px;
 

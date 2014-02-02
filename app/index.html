@@ -34,9 +34,7 @@
         <div class="header">
             <img class="picshare-sub-logo" src="images/picsharesublogo.png">
             <h1>PICSHARE</h1>
-            <div class="container">
-
-            </div>
+            <div class="container"></div>
         </div>
 
 
@@ -56,6 +54,7 @@
         <!-- /////////////////////////// INPUT ////////////////////////// -->
         
 
+<<<<<<< HEAD
 
         <div class="inputbanner">
             <div class="container">
@@ -72,42 +71,89 @@
                         <input value="3. And upload your photos."                                id='gali'       class="in-galleryimg"></input>
                         <button class="submit">submit</button>
                     </div>    
+=======
+        <div class="content">
+            <div class="inputbanner">
+                <div class="container">
+                    <div class="inputfield">
+                        <div class="inputtainer">
+                            <input value="hi"                   id='usern'      class="in-username"></input>
+                            <!-- look at the type and the name to try and fix the other img uploader input -->
+                            <input value="http://blog.gettyimages.com/wp-content/uploads/2012/10/NASCAR-Taladega-Chris-Graythen-Getty-Images-154895556-e1351523998575.jpg"id='prop'class="in-profilepic"></input>
+                            <input value="http://www.hdwallpapers3g.com/wp-content/uploads/2014/01/Images-1.jpg"                                id='gali'       class="in-galleryimg"></input>
+                            <br>
+                            <button class="submit">submit</button>
+                        </div>    
+                    </div>  
+>>>>>>> 130499d55733613f61b3c3e50519554e3c42dce0
                 </div>  
-            </div>  
-        </div>
+            </div>
            
 
         <!-- //////////////////////// AVATAR SECTION ////////////////////////// -->
 
 
 
-        <div class="avatarbanner">
-            <div class="container">
-                <div class="ceneteravatarcontainer"></div>
+            <div class="avatarbanner">
+                <div class="container">
+                    <div class="ceneteravatarcontainer">
+                        <h1>CHOOSE YOUR PROFILE BELOW</h1>
+                    </div>
+                </div>
             </div>
-        </div>
 
 
 
-        <!-- //////////////////////// PHOTO GALLERY /////////////////////////// -->
+            <!-- //////////////////////// PHOTO GALLERY /////////////////////////// -->
 
 
-        <div class="bannertwo">
-            <div class="container">
-                <div class="gallerytainer">
-            
-                </div>                
+            <div class="bannertwo">
+                <div class="container">
+                    <span class="gallery-title">Gallery</span>
+                    <div class="gallerytainer">
+                
+                    </div>                
+                </div>
             </div>
-        </div>
-
-
 
         <!-- //////////////////////////// FOOTER ////////////////////////////// -->
-    
-        <div class="footer"></div>
+
+            <footer>
+                <div class="footer">
+                    <div class="container">
+                            <div class="connect">
+                              <h1>Connect with us at The Iron Yard</h1>
+                              <p class="first">Be the first to sign up and share your memories with friends and family on Picshare.
+                            </div>
+                            <div class="social">
+                                <ul class="footer-social">
+                                  <li class="social-channel">
+                                    <img src="images/facebook.svg">
+                                    <span>Like us on Facebook</span>
+                                  </li>
+                                  <li class="social-channel">
+                                    <img src="images/twitter.svg">
+                                    <span>Follow us on Twitter</span>
+                                  </li>
+                                  <li class="social-channel">
+                                    <img src="images/googleplus.svg">
+                                    <span>+ 1 us on Google</span>
+                                  </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                  
+
+
+        <!-- /////////////////////////// SUBFOOTER //////////////////////////// -->
         
-
-
+                <div class="subfooter"></div>
+            </footer>
+        </div>
+        
+        <!-- ///////////////////// JAVASCRIPT TEMPLATES /////////////////////// -->
+       
 
          <script class="avatar-template" type="text/template">
              <div class="avatar">
@@ -120,10 +166,7 @@
          
          <script class="gallery-template" type="text/template">
                 <div class="galleryimgbox">
-                    <img class="galleryimg"src="<%= url %>">
-                    <div class="caption">
-                        <span class="imgcaption"><%= caption %></span>
-                    </div>   
+                    <img class="galleryimg" src="<%= url %>"/>
                 </div>
         </script>
  

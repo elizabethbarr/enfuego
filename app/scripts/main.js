@@ -80,28 +80,22 @@ userData = [
 ]
 // fixed this to accept arrays for newl inputed usernames and images
 // this is the constructor that is used to create new user objects in our database
-function User (name,email,location,propic,image,cap) {
+function User (name,propic,image) {
   if (name) {this.avatarusername = name}
-  if (email) {this.avataremail = email}
-  if (location) {this.avatarlocation = location}
   if (propic) {this.profilepic = propic}
-  if (image && cap) {
+  if (image) {
     this.images = [{
-      url: image,
-      caption: cap
+      url: image
     }]
   }
 }
 
 User.prototype = {
   avatarusername: '' || 'Jimbo',
-  avataremail: '' || 'No Email',
-  avatarlocation: '' || 'Location',
   profilepic: '' || 'No Avatar',
   images: [
             {
-              url: '',
-              caption: '',
+              url: ''
             }
           ] 
 }
@@ -110,13 +104,10 @@ User.prototype = {
 $('.submit').click(function(){
   console.log('We have a new user. YAY!!!');
     var name      = $('#usern').val();
-    var email     = $('#emai').val();
-    var location  = $('#loca').val();
     var propic    = $('#prop').val();
     var galimg    = $('#gali').val();
-    var cap       = $('#cap').val();
 
-    var userperson = new User(name,email,location,propic,galimg,cap);
+    var userperson = new User(name,propic,galimg);
   
     userData.push(userperson);
   
@@ -133,7 +124,7 @@ $('.submit').click(function(){
     
     $('.galleryimgbox').remove();
 
-    _.each(lastFiveUsers, function(avatar) {
+    _.each(userData, function(avatar) {
       _.each(avatar.images, function(image, index){
       $('.gallerytainer').append(usergallerytemplate(image));
       });
@@ -146,6 +137,11 @@ $('.submit').click(function(){
     $('.avatar').mouseout(function() {
       $(this).children('.caption').hide()
     });
+
+    $('#usern').val("1. Enter your username ...");
+    $('#prop').val("2. Choose a profile pic ...");
+    $('#gali').val("3. And upload your photos ...");
+
 //   var usergallerytemplate = _.template($('.gallery-template').text());
 
 

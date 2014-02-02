@@ -27,6 +27,7 @@ body * {
     margin: 0;
     background-color: rgba(255, 255, 255, .9);
     height: 75px;
+    box-shadow: 0px -3px 10px black;
 
 
     .picshare-sub-logo {
@@ -46,6 +47,7 @@ body * {
         font-weight: 100;
         line-height: 75px;
         color: black;
+        font-size: 32px;
         padding: 0;
         margin: 0;
 
@@ -80,145 +82,93 @@ body * {
     }
 }
 
-.inputbanner {
+.content {
     position: relative;
     top: 855px;
-    width: 100%;
-    height: 400px;
 
-    .inputfield {
-        z-index: 5;
-        margin: 0 auto;
-        text-align: center;
+    .inputbanner {
         position: relative;
-        width: 650px;
-        height: 300px;
-        background-color: rgba(226, 226, 224, .9);
-        border-radius: 6px;
+        width: 100%;
+        height: 400px;
 
-        .inputtainer {
-            text-align: center;
-            margin: auto auto  ;
-            width: 100%;
-
-            .in-username {
-                width: 100px;
-            }
-
-            .in-email {
-                width: 200px;
-            }
-
-            .in-location {
-                width: 150px;
-            }
-
-            .in-profilepic {
-                width: 500px;
-            }    
-
-            .in-galleryimg {
-                width: 500px;
-            }
-
-            .in-imgcaption {
-                width: 500px;
-            }
-        }
-    }
-}
-
-$avatarsize: 150px;
-
-.avatarbanner {
-    position: relative;
-    top: 855px;
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-
-    .ceneteravatarcontainer {
-        text-align: center;
-        margin: 0 auto;
-        width: 775px;
-    background-color: rgba(0, 0, 0, .8);
-
-        .avatar {
-            position: relative;
-            display: inline-block;
+        .inputfield {
+            z-index: 5;
             margin: 0 auto;
-            height: $avatarsize;
-            width: $avatarsize;
-            border-radius: $avatarsize;
+            text-align: center;
+            position: relative;
+            width: 650px;
+            height: 300px;
+            background-color: rgba(226, 226, 224, .9);
+            border-radius: 6px;
 
-            .avatarimage {
-                border-radius: $avatarsize;
-                height: $avatarsize;
-                width: $avatarsize;
-            }
-
-            .caption {
-                border-radius: $avatarsize;
-                background-color: rgba(128, 128, 128, 0.4);
-                width: $avatarsize;
-                height: $avatarsize;
-                position: absolute;
-                line-height: $avatarsize;
-                top: 0;
-                display: block;
-                display: none;
+            .inputtainer {
                 text-align: center;
-                font-size: 16px;
-                color: #fff;
+                margin: auto auto  ;
+                width: 100%;
+
+                .in-username {
+                    width: 100px;
+                }
+
+                .in-profilepic {
+                    width: 500px;
+                }    
+
+                .in-galleryimg {
+                    width: 500px;
+                }
+
             }
         }
     }
-}
 
+    $avatarsize: 150px;
 
-.bannertwo {
-    position: relative;
-    top: 1250px;
-    height: 980px;
-    width: 100%;
-    background-color: rgba(226, 226, 224, .9);
+    .avatarbanner {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        background-color: rgba(92, 155, 135, .9);
 
-    .container {
-        margin-top: 20px; 
-        text-align: center;
-        border-radius: 6px;
-
-        .gallery-title {
-            font-size: 50px;
-            color: #fff;
-        }
-        .gallerytainer {
-            overflow-x: hidden;
-            overflow-y: scroll; 
-            position: relative;
+        .ceneteravatarcontainer {
             text-align: center;
-            margin: 20px auto 0;
-            height: 850px;
-            width: 100%;
+            margin: 50px auto;
+            width: 960px;
 
-            $imagesize: 180px;
+            h1 {
+                letter-spacing: 7px;
+                font-weight: 100;
+                line-height: 75px;
+                color: white;
+                font-size: 36px;
+            }
 
-            .galleryimgbox {
+            .avatar {
+                padding: 10px;
+                position: relative;
                 display: inline-block;
-                width: $imagesize;
-                height: $imagesize;
-                margin: 2px 2px;
+                margin: 0 auto;
+                height: $avatarsize;
+                width: $avatarsize;
+                border-radius: $avatarsize;
 
-                .galleryimg {
-                    border-radius: 6px;
-                    width: $imagesize;
-                    height: $imagesize;
+                .avatarimage {
+                    border: solid 2px white;
+                    border-radius: $avatarsize;
+                    height: $avatarsize;
+                    width: $avatarsize;
                 }
 
                 .caption {
-                    background-color: rgba(128, 128, 128, 0.4);
+                    border-radius: $avatarsize;
+                    width: $avatarsize;
+                    height: $avatarsize;
+                    background-color: rgba(45, 45, 45, .6);
                     position: absolute;
-                    top: 0;
+                    line-height: $avatarsize;
+                    top: 12px;
+                    left: 12px;
                     display: block;
                     display: none;
                     text-align: center;
@@ -226,53 +176,121 @@ $avatarsize: 150px;
                     color: #fff;
                 }
             }
-        }             
+        }
     }
-}
-
-.transsheet {
-  display: none;
-  position: fixed;
-  top: 80px;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 80;
-}
-
-.popupbox { 
-    display:none; /* Hide the DIV */
-    position:fixed;  
-    height:500px; 
-    box-shadow: 1px 1px 15px #6c6c6c;
-    width:960px;  
-    background:#fff;  
-    border: 5px solid #6c6c6c;
-    left: 150px;
-    top: 200px;
-    z-index:100; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
-    margin-left: 15px; 
 
 
-  .scrollimg {
-    display: inline-block;
-    height: 300px;
-    margin-top: 20px;
-    width: 100%;
+    .bannertwo {
+        position: relative;
+        height: 980px;
+        width: 100%;
+        background-color: rgba(226, 226, 224, .9);
 
+        .container {
+            margin-top: 20px; 
+            text-align: center;
+            border-radius: 6px;
 
-    .scrimg {
-      display: inline-block;
-      margin: 5px 5px;
-      float: left;
+            .gallery-title {
+                font-size: 50px;
+                color: #fff;
+            }
+            .gallerytainer {
+                overflow-x: hidden;
+                overflow-y: scroll; 
+                position: relative;
+                text-align: center;
+                margin: 20px auto 0;
+                height: 850px;
+                width: 100%;
+
+                $imagesize: 180px;
+
+                .galleryimgbox {
+                    display: inline-block;
+                    width: $imagesize;
+                    height: $imagesize;
+                    margin: 2px 2px;
+
+                    .galleryimg {
+                        border-radius: 6px;
+                        width: $imagesize;
+                        height: $imagesize;
+                    }
+
+                    .caption {
+                        background-color: rgba(128, 128, 128, 0.4);
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        display: none;
+                        text-align: center;
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+            }             
+        }
     }
-  }
-  .popupboxclose {
-    font-size:20px;  
-    line-height:15px;  
-    right:5px;  
-    top:5px;  
-    position:absolute;  
-    font-weight:500;      
-  }
+
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background-color: rgb(45, 45, 45);
+
+        .connect {
+            text-align: center;
+            
+            h1  {
+                opacity: .6;
+                padding-top: 49px;
+                letter-spacing: 4px;
+                color: white;
+                font-weight: 100;
+                font-size: 32px;
+            }
+
+            p   {
+                padding-top: 7px;
+                opacity: .6;
+                color: white;
+                font-weight: 200;
+                font-size: 14px;
+            }
+        }
+
+        .social {
+            text-align: center;
+            position: relative;
+            padding-top: 80px;
+
+            .footer-social {
+                display: inline-block;
+                color: white;
+                margin: 0 auto;
+                padding: 10px;
+                list-style: none;
+
+                .social-channel {
+                    opacity: .6;
+                    display: inline-block;
+                    margin: 0 auto;
+                    color: white;
+                    padding: 10px;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    line-height: 25px;
+                }
+
+            }
+        }
+    }
+
+    .subfooter {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(92, 155, 135);
+    }
 }

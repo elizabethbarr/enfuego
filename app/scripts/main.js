@@ -4,101 +4,76 @@
 userData = [
   {
     avatarusername: 'Bertman45',
-    avataremail: 'bertman45@gmail.com',
-    avatarlocation: 'Greenville',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }, 
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }, 
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }
       ]
   },
   {
     avatarusername: 'Jeremyson',
-    avataremail: 'jcrawford.design@gmail.com',
-    avatarlocation: 'Greenville',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }, 
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }, 
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }
       ]
   },
   {
     avatarusername: 'Elizbarr',
-    avataremail: 'elizbarr@gmail.com',
-    avatarlocation: 'Greenville',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }, 
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }, 
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }
       ]
   },
     {
     avatarusername: 'LingBoard',
-    avataremail: 'board@gmail.com',
-    avatarlocation: 'Ohio',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }, 
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }, 
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }
       ]
   },
     {
     avatarusername: 'EnFuego',
-    avataremail: 'icepack@gmail.com',
-    avatarlocation: 'Equator',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }, 
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }, 
         {
           url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
         }
       ]
   }
@@ -164,8 +139,12 @@ $('.submit').click(function(){
       });
     });
 
-    $('.avatar').hover(function() {
-      $(this).children('.caption').slideDown('slow')
+    $('.avatar').mouseover(function() {
+      $(this).children('.caption').show()
+    });
+
+    $('.avatar').mouseout(function() {
+      $(this).children('.caption').hide()
     });
 //   var usergallerytemplate = _.template($('.gallery-template').text());
 
@@ -202,6 +181,11 @@ var usergallerytemplate = _.template($('.gallery-template').text());
 
 // this is the section that is going to be used for the change states and more of the design work, instead of functionality
 // this is the animation jquery for the caption slide over
-$('.avatar').hover(function() {
-  $(this).children('.caption').slideDown('slow')
+$('.avatar').mouseover(function() {
+  $(this).children('.caption').show()
 });
+
+$('.avatar').mouseout(function() {
+  $(this).children('.caption').hide()
+});
+

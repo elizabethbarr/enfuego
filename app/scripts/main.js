@@ -4,101 +4,76 @@
 userData = [
   {
     avatarusername: 'Bertman45',
-    avataremail: 'bertman45@gmail.com',
-    avatarlocation: 'Greenville',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }, 
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }, 
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }
       ]
   },
   {
     avatarusername: 'Jeremyson',
-    avataremail: 'jcrawford.design@gmail.com',
-    avatarlocation: 'Greenville',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }, 
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }, 
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }
       ]
   },
   {
     avatarusername: 'Elizbarr',
-    avataremail: 'elizbarr@gmail.com',
-    avatarlocation: 'Greenville',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }, 
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }, 
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }
       ]
   },
     {
     avatarusername: 'LingBoard',
-    avataremail: 'board@gmail.com',
-    avatarlocation: 'Ohio',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }, 
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }, 
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }
       ]
   },
     {
     avatarusername: 'EnFuego',
-    avataremail: 'icepack@gmail.com',
-    avatarlocation: 'Equator',
     profilepic: 'http://lorempixel.com/150/150/',
     images: [
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }, 
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }, 
         {
-          url:'http://lorempixel.com/400/200/',
-          caption: 'this is a test img'
+          url:'http://lorempixel.com/400/200/',        
         }
       ]
   }

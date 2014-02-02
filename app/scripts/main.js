@@ -148,6 +148,7 @@ $('.submit').click(function(){
     });
 //   var usergallerytemplate = _.template($('.gallery-template').text());
 
+
 //    _.each(userData, function(user,index){
 //     $('.gallerytainer').append(usergallerytemplate(user));
 //    });

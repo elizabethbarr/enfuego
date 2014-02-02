@@ -167,22 +167,6 @@ $('.submit').click(function(){
     $('.avatar').hover(function() {
       $(this).children('.caption').slideDown('slow')
     });
-
-    $('.galleryimgbox').click(function() {
-        console.log ('this worked');
-
-        $('.popupbox').toggle('slow');
-        $('.transsheet').toggle('slow');
-        var thisimg = $(this '.galleryimg')
-    });
-
-    $('.popupboxclose').click(function(){
-        console.log ('this worked');
-
-      $('.popupbox').toggle('slow');
-      $('.transsheet').toggle('slow');
-    });
-
 //   var usergallerytemplate = _.template($('.gallery-template').text());
 
 //    _.each(userData, function(user,index){
@@ -220,19 +204,4 @@ var usergallerytemplate = _.template($('.gallery-template').text());
 // this is the animation jquery for the caption slide over
 $('.avatar').hover(function() {
   $(this).children('.caption').slideDown('slow')
-});
-
-$('.galleryimgbox').click(function() {
-    console.log ('this worked');
-
-    $('.popupbox').toggle('slow');
-    $('.transsheet').toggle('slow');
-
-});
-
-$('.popupboxclose').click(function(){
-    console.log ('this worked');
-
-  $('.popupbox').toggle('slow');
-  $('.transsheet').toggle('slow');
 });

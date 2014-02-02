@@ -98,35 +98,61 @@ body * {
 
         .inputtainer {
             text-align: center;
-            margin: auto auto  ;
+            margin: auto auto;
             width: 100%;
 
-            .in-username {
-                width: 100px;
+
+            .join-cont {
+                padding-top: 20px;
+                width: 100%;
+            
+
+                .join {
+                    font-weight: 100;
+                    font-size: 32px;
+                    letter-spacing: 2px;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .easy {
+                    font-weight: 100;
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                    width: 100%;
+                    line-height: 3px;
+                }
             }
 
-            .in-email {
-                width: 200px;
-            }
+                .in-username {
+                    margin-top: 20px;
+                    width: 550px;
+                    height: 20px;
+                }
 
-            .in-location {
-                width: 150px;
-            }
+                .in-profilepic {
+                    width: 550px;
+                    margin-top: 20px;
+                    height: 20px;
+                }    
 
-            .in-profilepic {
-                width: 500px;
-            }    
+                .in-galleryimg {
+                    width: 550px;
+                    margin-top: 20px;
+                    height: 20px;
+                }
 
-            .in-galleryimg {
-                width: 500px;
-            }
-
-            .in-imgcaption {
-                width: 500px;
-            }
+                .submit {
+                    margin-top: 20px;
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 4px;
+                    font-size: 18px;
+                }
+            }  
         }
-    }
-}
+    }    
+
 
 $avatarsize: 150px;
 
